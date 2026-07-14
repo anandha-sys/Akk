@@ -1,1 +1,282 @@
+/* ===========================
+   AK GROUP OF TECHNOLOGIES
+   public/css/style.css
+=========================== */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#050816;
+    color:#fff;
+    line-height:1.6;
+}
+
+/* Navigation */
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:rgba(5,8,22,.85);
+    backdrop-filter:blur(12px);
+    z-index:1000;
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.logo h2{
+    color:#00E5FF;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    transition:.3s;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#00E5FF;
+}
+
+/* Hero */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:120px 10% 80px;
+    background:
+        radial-gradient(circle at top,#0d1b4d,#050816);
+}
+
+.hero h1{
+    font-size:56px;
+    margin-bottom:20px;
+    color:#00E5FF;
+}
+
+.hero p{
+    max-width:760px;
+    margin:auto;
+    color:#d0d0d0;
+    font-size:18px;
+}
+
+.buttons{
+    margin-top:40px;
+}
+
+/* Buttons */
+
+.btn{
+    display:inline-block;
+    margin:10px;
+    padding:15px 34px;
+    border-radius:40px;
+    background:#00E5FF;
+    color:#050816;
+    font-weight:700;
+    text-decoration:none;
+    transition:.35s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 0 30px #00E5FF;
+}
+
+.secondary{
+    background:transparent;
+    color:#fff;
+    border:2px solid #00E5FF;
+}
+
+.secondary:hover{
+    background:#00E5FF;
+    color:#050816;
+}
+
+/* Sections */
+
+section{
+    padding:100px 10%;
+}
+
+section h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+    color:#00E5FF;
+}
+
+/* Cards */
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    padding:30px;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    border-color:#00E5FF;
+    box-shadow:0 0 30px rgba(0,229,255,.3);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#00E5FF;
+}
+
+.card p{
+    color:#cfcfcf;
+}
+
+/* Project */
+
+.project{
+    background:rgba(255,255,255,.05);
+    border-radius:20px;
+    padding:40px;
+    text-align:center;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.project h3{
+    color:#00E5FF;
+    margin-bottom:20px;
+}
+
+.project p{
+    color:#ddd;
+    margin-bottom:25px;
+}
+
+/* Contact */
+
+form{
+    max-width:700px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+input,
+textarea{
+    padding:16px;
+    border:none;
+    outline:none;
+    border-radius:12px;
+    background:#12172c;
+    color:#fff;
+}
+
+textarea{
+    min-height:180px;
+    resize:vertical;
+}
+
+button{
+    padding:16px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    background:#00E5FF;
+    color:#050816;
+    font-weight:700;
+    transition:.3s;
+}
+
+button:hover{
+    box-shadow:0 0 25px #00E5FF;
+}
+
+/* Footer */
+
+footer{
+    padding:40px;
+    text-align:center;
+    background:#02040d;
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+footer h3{
+    color:#00E5FF;
+    margin-bottom:10px;
+}
+
+footer p{
+    color:#bdbdbd;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#00E5FF;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-track{
+    background:#050816;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+header{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+section h2{
+    font-size:32px;
+}
+
+}
