@@ -1,7 +1,0 @@
-services:
-  - type: web
-    name: ak-group-of-technologies
-    runtime: node
-    plan: free
-    buildCommand: npm install
-    startCommand: npm start
